@@ -8,12 +8,12 @@
 
 import time
 from vSphere_Automation_SDK.Connect_to_vCenter_Server import vsphere_client
+
+print("VM Session ID".ljust(19),"POWER STATE".ljust(19),"CPU COUNT".ljust(19),"MEMORY SIZE MIB".ljust(19),"NAME".ljust(80))
 start_time = time.time()
 try:
 # List all VMs inside the vCenter Server / 获取vc中所有VM，最高不超过4000台
     vm =vsphere_client.vcenter.VM.list()
-
-    print("VM Session ID".ljust(19),"POWER STATE".ljust(19),"CPU COUNT".ljust(19),"MEMORY SIZE MIB".ljust(19),"NAME".ljust(80))
     for i in vm:
         cpu = str(i.cpu_count)
         memory = str(i.memory_size_mib)
