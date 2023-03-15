@@ -2,7 +2,7 @@
 Some automation scripts written using VMware vSphere Automation SDK for Python.
 
 # How to use
-download the scripts and cd to the directory where the script is located. 
+Download the scripts and cd to the directory where the script is located. 
 
 run script
 ```shell
