@@ -1,6 +1,9 @@
 # vSphere-Python-Automation-Scripts
 Some automation scripts written using VMware vSphere Automation SDK for Python.
 
+This library creates automation scripts based on [VMware vSphere Automation SDK for Python](https://github.com/vmware/vsphere-automation-sdk-python)
+
+
 # How to use
 Download the scripts and cd to the directory where the script is located. 
 
