@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @File  : clone_VM.py
-# @Author: Yao Zhang
+# @Author: NOWSHUT
 # @Date  : 2023/3/9 16:03
 # @Desc  :
 # @Contact : nowshut@qq.com
