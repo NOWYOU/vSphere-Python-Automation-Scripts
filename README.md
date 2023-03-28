@@ -15,6 +15,6 @@ run script
 ```shell
 python script_name.py
 ```
-Enter the IP or FQDN of vCenter Server, the administrator account and password of the SSO domain.
+Enter the IP or FQDN of vCenter Server, the administrator account and password of the SSO domain.(This is a version 2 feature, currently in version 1)
 
 <img width="960" alt="截图_20230315230740" src="https://user-images.githubusercontent.com/43359644/225352703-b6b65782-9561-4c13-a87f-9a85f08ea39e.png">
