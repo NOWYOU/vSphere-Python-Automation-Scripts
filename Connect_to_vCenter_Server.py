@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @File  : Connect_to_vCenter_Server.py
-# @Author: Yao Zhang
+# @Author: NOWSHUT
 # @Date  : 2023/3/9 10:40
 # @Desc  :
 # @Contact : nowshut@qq.com
