@@ -1,0 +1,51 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @File  : relocate_VM.py
+# @Author: NOWSHUT
+# @Date  : 2023/3/12 18:31
+# @Desc  :
+# @Contact : nowshut@qq.com
+ 
+import time
+from vSphere_Automation_SDK.Connect_to_vCenter_Server import vsphere_client
+ 
+spec = {
+    # "disks": {
+    #   "key": {
+    #       "datastore": "datastore-13237870"
+    #   }
+    # },
+    "placement": {
+        "cluster": "domain-c13240865",           # The cluster where the VMs are located after migration. Enable this parameter to enable cross-cluster vMotion with the same VC.
+        "datastore": "datastore-13237868",       # The datastore where the VMs will be located after migration. Enable this parameter to enable storage vMotion.                       
+        "host": "host-13240916",                 # The ESXi where the VM is located after migration. Enable this parameter to enable compute vMotion.
+    }
+}
+ 
+start_time = time.time()
+try:
+    relocate_vm = vsphere_client.vcenter.VM.relocate(vm="vm-13240894",spec=spec)
+    print("Migration succeeded")
+except Exception as err:
+    if err.messages != []:
+        for i in err.messages:
+            id = i.id,
+            default_message = i.default_message
+            args = i.args
+            params = i.params
+            localized = i.localized
+ 
+        print("\033[1;31m Encountered an error, Please see the following information \033[0m",
+              "\n\tError Class:", id,
+              "\n\tMessage:", default_message,
+              "\n\tArgs:", args,
+              "\n\tParams:", params,
+              "\n\tLocalized:", localized,
+              "\nError Data:", err.data,
+              "\nError Type:", err.error_type
+              )
+    else:
+        print(err)
+end_time = time.time()
+run_time = end_time - start_time
+print("Used Time:", run_time)
