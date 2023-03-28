@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @File  : delete_VM.py
-# @Author: Yao Zhang
+# @Author: NOWSHUT
 # @Date  : 2023/3/10 22:44
 # @Desc  :
 # @Contact : nowshut@qq.com
