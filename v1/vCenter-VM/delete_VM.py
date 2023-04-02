@@ -8,7 +8,7 @@
 
 import time
 from vSphere_Automation_SDK.Connect_to_vCenter_Server import vsphere_client
-# 删除指定VM，需要VM Session ID
+# Delete the specified VM, the VM ID is required
 start_time = time.time()
 try:
     del_vm = vsphere_client.vcenter.VM.delete("vm-session-ID")
