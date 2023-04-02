@@ -10,10 +10,10 @@ import time
 from vSphere_Automation_SDK.Connect_to_vCenter_Server import vsphere_client
 
 start_time = time.time()
-# 最简单的克隆
+# Simplest clone
 sepc = {
-    "name": "centos7-1-clone",            # 克隆VM的名
-    "source": "vm-13240857",             # 被克隆的VM Session ID
+    "name": "centos7-1-clone",           # The name of the clone VM 
+    "source": "vm-13240857",             # cloned VM ID
 }
 start_time = time.time()
 try:
