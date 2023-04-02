@@ -10,11 +10,11 @@ import time
 from vSphere_Automation_SDK.Connect_to_vCenter_Server import vsphere_client
 
 spec = {
-	    "guest_os": "WINDOWS_9_64",                        # 必选项
+	    "guest_os": "WINDOWS_9_64",                  # Guest OS
 	    "placement": {
-            "datastore": "datastore-13237870",           # 存储session ID
-            "folder": "group-v11",                       # folder session ID
-            "host": "host-13237857",                     # Host session ID
+            "datastore": "datastore-13237870",           # Storage ID
+            "folder": "group-v11",                       # folder ID
+            "host": "host-13237857",                     # Host ID
 	}
 }
 start_time = time.time()
